@@ -1,0 +1,18 @@
+{
+    "Hostel name" : "Hanuman Boys Hostel",
+    "Established" : "10-10-2019",
+    "Purpose"     : "Hospitality",
+    "Address"     :[
+        {
+            "Hostel name" : "Hanuman Boys Hostel",
+            "Established" : "10-10-2019",
+            "Purpose"     : "Hospitality"
+        },
+        {
+            "Hostel name" : "Hanuman Boys Hostel",
+            "Established" : "10-10-2019",
+            "Purpose"     : "Hospitality"
+
+        }
+    ]
+}
