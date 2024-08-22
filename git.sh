@@ -32,3 +32,6 @@ fi
 yum list installed $PACKAGE
 VALIDATION 
 
+yum install git -y
+VALIDATION
+
