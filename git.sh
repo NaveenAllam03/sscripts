@@ -19,7 +19,7 @@ VALIDATION(){
     fi        
 }
 
-PACKAGE=GIT
+PACKAGE=git
 ID=$(id -u)
 if [ $ID -ne 0 ]
 then 
