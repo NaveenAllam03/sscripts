@@ -29,9 +29,9 @@ else
     echo "running script.."
 fi  
 
-yum list installed $PACKAGE
+apt-get list installed $PACKAGE
 VALIDATION 
 
-yum install $PACKAGE -y
+apt-get install $PACKAGE -y
 VALIDATION
 
