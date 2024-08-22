@@ -5,11 +5,12 @@
 # steps 
 # check git package is avaliable or not with exit status..
 # 
-#
-#
+# this is for ubuntu 
+# change package managers for different versions..
 #
 #
 ##########################
+
 VALIDATION(){
     if [ $? -ne 0 ]
     then 
