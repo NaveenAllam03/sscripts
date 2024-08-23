@@ -1,0 +1,12 @@
+important points for me to remember
+
+important small tools devops engineers daily use.
+1 . jq --> used to read the json format files used by devops engineers
+2 . net-tools --> nslook, ifconfig for this to work we need net-tools tools
+3 . unzip --> to unzip the file 
+
+most important tools:
+
+1. tmux --> to get multiple terminals in single screen. mostly used while checking something..
+   1. (tmux) + (control+B) + (shift+")  -> to get a horizontal terminals
+   2. (tmux) + (control+B) + (shift+5)  -> to get a vertical terminals
