@@ -11,4 +11,4 @@
 ##########################
 
 month=$(cal)
-echo "month is : ${$month} "
+echo "month is : ${month} "
