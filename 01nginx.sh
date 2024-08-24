@@ -16,11 +16,11 @@ user=$(id -u)
 CHECKING(){
     if [ $1 -ne 0 ]
     then
-       echo "started installing $2" 
+       echo " started installing $2" 
        echo " $2 Failed to install..."
        exit 1
     else 
-       echo "started installing $2"
+       echo " started installing $2"
        echo " $2 sucessfully installed..."
     fi             
 }
@@ -34,8 +34,6 @@ else
 fi
 
 apt-get update -y
-
-CHECKING
 
 apt-get install nginx -y
 
