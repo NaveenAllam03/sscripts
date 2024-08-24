@@ -9,8 +9,8 @@
 ## Storing logs of every runned shell script is very important
 
 user=$(id -u)
-
 TIME=$(date +%F-%H-%M-%S)
+
 LOGFILE="/tmp/$0-$TIME.log" 
 
 CHECKING(){              # function for repetetive code and calling it to validate exit status of commands
@@ -33,10 +33,10 @@ fi
 
 apt-get update -y &>> $LOGFILE                        #updating packages and adding to logfile
 
-apt-get install httpd -y &>> $LOGFILE                  # installing nginx and adding to logfile
+apt-get install jq -y &>> $LOGFILE                  # installing nginx and adding to logfile
 
-CHECKING $? "httpd"                        #validating installed or not with passing arguments to function.
+CHECKING $? "jq"                        #validating installed or not with passing arguments to function.
 
-apt-get install unzip -y &>> $LOGFILE                 #installing git and adding to logfile
+apt-get install net-tools -y &>> $LOGFILE                 #installing git and adding to logfile
 
-CHECKING $? "unzip"
+CHECKING $? "net-tools"
