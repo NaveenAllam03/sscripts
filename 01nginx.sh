@@ -5,6 +5,8 @@
 # checked and validated before the software installation
 #########################
 
+## Storing logs of every runned shell script is very important
+
 user=$(id -u)
 
 CHECKING(){              # function for repetetive code and calling it to validate exit status of commands
