@@ -31,12 +31,12 @@ else
     echo "executing command with sudo access..."  
 fi
 
-apt-get update -y  &>> $LOGFILE                        #updating packages and adding to logfile
+apt-get update -y &>> $LOGFILE                        #updating packages and adding to logfile
 
-apt-get install httpd -y  &>> $LOGFILE                  # installing nginx and adding to logfile
+apt-get install httpd -y &>> $LOGFILE                  # installing nginx and adding to logfile
 
 CHECKING $? "httpd"                        #validating installed or not with passing arguments to function.
 
-apt-get install unzip -y  &>> $LOGFILE                 #installing git and adding to logfile
+apt-get install unzip -y &>> $LOGFILE                 #installing git and adding to logfile
 
 CHECKING $? "unzip"
