@@ -1,9 +1,9 @@
 #!/bin/bash
 
 ########################
-#
-#
-#
+# wrote a function and called it
+# checked and validated before the software installation
+# 
 #
 #
 #
@@ -15,12 +15,10 @@ user=$(id -u)
 
 CHECKING(){
     if [ $1 -ne 0 ]
-    then
-       echo " started installing $2" 
+    then 
        echo " $2 Failed to install..."
        exit 1
     else 
-       echo " started installing $2"
        echo " $2 sucessfully installed..."
     fi             
 }
