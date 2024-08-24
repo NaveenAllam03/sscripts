@@ -22,16 +22,16 @@ N="\e[0m"
 CHECKING(){              # function for repetetive code and calling it to validate exit status of commands
     if [ $1 -ne 0 ]
     then 
-       echo " $2 $N Failed to install..."
+       echo " $2 $R Failed to install..."
        exit 1
     else 
-       echo " $2 $G sucessfully installed..."
+       echo " $2 $G sucessfully installed...$N"
     fi             
 }
 
 if [ $user -ne 0 ]       #condition checking for sudo access
 then
-    echo "change to sudo user to run..."
+    echo "change to $R sudo $N user to run..."
     exit 1 
 else 
     echo "executing command with sudo access..."  
