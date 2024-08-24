@@ -11,6 +11,9 @@
 #
 ##########################
 
+PACKAGE=git
+ID=$(id -u)
+
 VALIDATION(){
     if [ $? -ne 0 ]
     then 
@@ -20,8 +23,6 @@ VALIDATION(){
     fi        
 }
 
-PACKAGE=git
-ID=$(id -u)
 if [ $ID -ne 0 ]
 then 
     echo " run script with sudo access... "

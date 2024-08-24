@@ -1,0 +1,23 @@
+important info
+
+when writing a script to install some software into a machine:
+Follow these steps
+
+steps:
+
+1. check the user is root or not.                           # by default most of software install with root access
+2. write conditions, only with conditions we achive this    # if, ifelse, elif 
+   -> sample algoritham
+      if [ conditon 1]
+      then
+          echo "statement"
+      else 
+          echo "statement2"
+      fi
+
+3. write exit codes to validate conditions                  # assurance for system to know it should go forward or exit
+4. command to install <your-application>                    # write based of linux flavour
+5. again command to check weather installed or not          # one more validation.
+6. wite conditions to display sucess or fail                # if, ifelse, elif.
+7. write functions for repetitive tasks.
+   -> generally funtions are kept under variables.

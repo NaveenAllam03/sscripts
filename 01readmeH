@@ -1,9 +1,9 @@
 important points for me to remember
 
 important small tools devops engineers daily use.
-1 . jq --> used to read the json format files used by devops engineers
-2 . net-tools --> nslook, ifconfig for this to work we need net-tools tools
-3 . unzip --> to unzip the file 
+1. jq --> used to read the json format files used by devops engineers 
+2. net-tools --> nslook, ifconfig for this to work we need net-tools tools
+3. unzip --> to unzip the file 
 
 most important tools:
 
