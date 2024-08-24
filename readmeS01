@@ -21,3 +21,14 @@ steps:
 6. wite conditions to display sucess or fail                # if, ifelse, elif.
 7. write functions for repetitive tasks.
    -> generally funtions are kept under variables.
+
+
+
+                                redirections
+
+1. By default only the executed logs were stored   
+
+      <command> 1> to store a sucess log to file
+      <command> 2> to store a failure log to file
+      <command> &> both sucess and failure logs to file
+      <command> 1 (or) 2 (or) & (>>) this symbol adds logs to existing logs.
