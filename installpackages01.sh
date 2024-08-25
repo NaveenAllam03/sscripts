@@ -15,9 +15,9 @@ USER=$(id -u)
 VALIDATE(){
     if [ $1 -ne 0 ]
     then 
-        echo " $2 started installing..."
+        echo " $2 failes.."
     else
-        echo " $2 already exists..."
+        echo " $2 sucess.."
     fi    
 }
 
@@ -38,5 +38,6 @@ do
         apt install $tools -y
         VALIDATE $? "installation of $tools"
     else
-            
+        echo " $tools already installed "
+    fi         
 done 
