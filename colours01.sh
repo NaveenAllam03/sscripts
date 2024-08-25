@@ -12,9 +12,9 @@
 user=$(id -u)
 TIME=$(date +%F-%H-%M-%S)
 
-LOGFILE="/tmp/$0-$TIME.log" 
+LOGFILE="/home/ubuntu/$0-$TIME.log" 
 
-R="\e[31m"
+R="\e[31m"  #added colours for feasibility
 G="\e[32m" 
 Y="\e[33m" 
 N="\e[0m" 
