@@ -33,8 +33,8 @@ fi
 
 for tools in $@
 do
-    apt list installed $tools
-    if [ $? -eq 0 ]
+    apt list --installed "$tools"
+    if [ $? -ne 0 ]
     then 
         apt install $tools -y
         VALIDATE $? "installation of $tools"
