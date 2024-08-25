@@ -33,7 +33,7 @@ fi
 
 for tools in $@
 do
-    apt list --installed "$tools"
+    apt list installed "$tools"
     if [ $? -ne 0 ]
     then 
         apt install $tools -y
