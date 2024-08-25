@@ -35,8 +35,8 @@ do
     apt list --installed $tools
     if [ $? -ne 0 ]
     then 
-        apt-get install $tools -y
-        VALIDATE $? "$tools"
+        apt install $tools -y
+        VALIDATE $? "installation of $tools"
     else
             
 done 
