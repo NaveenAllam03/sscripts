@@ -10,9 +10,6 @@
 #
 ######################
 
-USER=$(id -u)
-set -xe
-
 VALIDATE(){
     if [ $1 -ne 0 ]
     then 
@@ -22,6 +19,8 @@ VALIDATE(){
     fi    
 }
 
+USER=$(id -u)
+set -xe
 
 if [ $USER -ne 0 ]
 then
