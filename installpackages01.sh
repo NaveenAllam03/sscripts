@@ -31,6 +31,7 @@ else
     echo "executing scripts as sudo user..."
 fi   
 
+
 for tools in $@
 do
     apt list --installed $tools
