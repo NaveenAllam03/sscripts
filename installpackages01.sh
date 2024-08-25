@@ -13,11 +13,11 @@
 USER=$(id -u)
 
 VALIDATE(){
-    if [ $? -ne 0 ]
+    if [ $1 -ne 0 ]
     then 
-        echo "started installing..."
+        echo " $2 started installing..."
     else
-        echo "already exists..."
+        echo " $2 already exists..."
     fi    
 }
 
@@ -30,5 +30,13 @@ else
     echo "executing scripts as sudo user..."
 fi   
 
-apt-get update 
-VALIDATE 
+for tools in $@
+do
+    apt list --installed $tools
+    if [ $? -ne 0 ]
+    then 
+        apt-get install $tools -y
+        VALIDATE $? "$tools"
+    else
+            
+done 
