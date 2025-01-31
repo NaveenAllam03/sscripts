@@ -13,6 +13,13 @@
 #  read password
 #
 ###################
+hello=('h' 'e' 'l' 'l' 'a')
+
+echo ${hello[4]}
+# echo ${hello[@]} -> @ gives all the values in the given array
+
+
+read -p -s "enter name: " name
 
 read -s -p "enter username : " username
 
